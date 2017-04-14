@@ -10,6 +10,8 @@ module.exports = function(sequelize, DataTypes) {
     const Task = sequelize.define("Task", {
         name: DataTypes.STRING,
         finish:DataTypes.BOOLEAN
+    },{
+        timestamps: false
     });
 
     return Task;
